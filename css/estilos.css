@@ -1,0 +1,26 @@
+h1 {text-align:center;background-color: rgb(235, 148, 91); color:rgb(0, 4, 5);font-family: 'serif', serif;}
+h2 {text-align:center;background-color: rgb(235, 148, 91); color:rgb(0, 4, 5);font-family: 'serif', serif;}
+p {text-align:left;background-color: rgb(245, 242, 240); color: black ; font-family: 'Didot', serif;}
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: 365px;  
+    text-align: left;
+    size:900px;
+  }
+  #rcorners3 {
+    border-radius: 25px;
+    background: url(paper.gif);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px; 
+    width: 700px;
+    height: 400px;  
+}
+#rcorners4 {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+  
+  }
