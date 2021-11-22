@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-    <h1>Instant Arrow</h1>
-    <h2>Archery for you</h2>
-    <p id="rcorners2">Double Olympic champion Bonchan exits in South Korea’s archery Tokyo 2020 trials</p>
-    <img src="images/articulo2.jpg" width="800" height="500" id="rcorners3">
-    <p id="rcorners4">South Korea’s archery team for next year’s Olympic Games is starting to take shape as the selection process begins.
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <style>
+            body {
+            background-image: url(images/background.jpg);
+            }
+        </style>
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h1>Instant Arrow</h1>
+        <h2>Archery for you</h2>
+        <p id="rcorners2">Double Olympic champion Bonchan exits in South Korea’s archery Tokyo 2020 trials</p>
+        <img src="images/articulo2.jpg" width="800" height="500" id="rcorners3">
+        <p id="rcorners4">South Korea’s archery team for next year’s Olympic Games is starting to take shape as the selection process begins.
 
         The trials for the Tokyo 2020 team are expected to run until the spring, but the compound categories have already been decided.
         
@@ -29,12 +35,24 @@
         The following two days saw the field sliced in half, leaving just 32 recurve men and 32 recurve women in the race for Korea’s six spots at Tokyo 2020 which has been postponed by a year due to the coronavirus pandemic.
         
         The highest-profile casualty came when double Olympic champion Ku Bonchan was eliminated after finishing 53rd.</p>
-</body>
-<head>
-    <style>
-        body {
-        background-image: url(images/background.jpg);
-        }
-    </style>
-</head>
+        <script
+        src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
+        </script>
+        <h2> Formulario de Contacto</h2>
+        <form action="registro.php" method="POST" class="container">
+            <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" maxlength="45" id="asunto" required class="form-control" placeholder="Ingrese el asunto">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" maxlength="45" id="email" required class="form-control" placeholder="Ingrese su Email">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <input type="mensaje" name="mensaje" maxlength="255" required id="mensaje" class="form-control" placeholder="Ingrese el mensaje">
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </body> 
 </html>

@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-    <h1>Instant Arrow</h1>
-    <h2>Archery for you</h2>
-    <p id="rcorners2">RPC win gold medal in archery wrap-up</p>
-    <img src="images/articulo3.jpg" width="800" height="500" id="rcorners3">
-    <p id="rcorners4">The Russian Paralympic Committee won gold in the mixed team recurve, the last archery event of the Tokyo 2020 Paralympic Games. Debutants Margarita Sidorenko and Kirill Smirnov defeated the Italian team 5-4 in the final at a rain-soaked Yumenoshima Park on Saturday, 4 September.
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <style>
+            body {
+            background-image: url(images/background.jpg);
+            }
+        </style>
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h1>Instant Arrow</h1>
+        <h2>Archery for you</h2>
+        <p id="rcorners2">RPC win gold medal in archery wrap-up</p>
+        <img src="images/articulo3.jpg" width="800" height="500" id="rcorners3">
+        <p id="rcorners4">The Russian Paralympic Committee won gold in the mixed team recurve, the last archery event of the Tokyo 2020 Paralympic Games. Debutants Margarita Sidorenko and Kirill Smirnov defeated the Italian team 5-4 in the final at a rain-soaked Yumenoshima Park on Saturday, 4 September.
 
         Smirnov sealed the victory with a nine in a shoot-off triumph against the Italians Elisabetta Mijno and Stefano Trevisani. In the semifinal, the RPC pair defeated strong favourites China by the same score.
         
@@ -29,12 +35,24 @@
         Despite the bronze medal, China stayed on top with eight medals, including four golds out of a possible nine.  RPC's first archery gold medal of Tokyo 2020 moves them up to fourth in the medal table for this sport. 
         
         In total, 139 archers from 42 NPCs competed across the nine days of competition at Yumenoshima Park.</p>
-</body>
-<head>
-    <style>
-        body {
-        background-image: url(images/background.jpg);
-        }
-    </style>
-</head>
+        <script
+        src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
+        </script>
+        <h2> Formulario de Contacto</h2>
+        <form action="registro.php" method="POST" class="container">
+            <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" maxlength="45" id="asunto" required class="form-control" placeholder="Ingrese el asunto">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" maxlength="45" id="email" required class="form-control" placeholder="Ingrese su Email">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <input type="mensaje" name="mensaje" maxlength="255" required id="mensaje" class="form-control" placeholder="Ingrese el mensaje">
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
 </html>

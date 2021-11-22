@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-    <h1>Instant Arrow</h1>
-    <h2>Archery for you</h2>
-    <p id="rcorners2">Kevin Mather`s Gold Medal Highlights U.S. PARA Archery Performance in Tokyo</p>
-    <img src="images/articulo4.webp" width="800" height="500" id="rcorners3">
-    <p id="rcorners4">Kevin Mather has always been a multisport athlete in more ways than one, from competing as both an able-bodied and adaptive athlete, from Ironman triathlons to the para alpine skiing world championships.
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <style>
+            body {
+            background-image: url(images/background.jpg);
+            }
+        </style>
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h1>Instant Arrow</h1>
+        <h2>Archery for you</h2>
+        <p id="rcorners2">Kevin Mather`s Gold Medal Highlights U.S. PARA Archery Performance in Tokyo</p>
+        <img src="images/articulo4.webp" width="800" height="500" id="rcorners3">
+        <p id="rcorners4">Kevin Mather has always been a multisport athlete in more ways than one, from competing as both an able-bodied and adaptive athlete, from Ironman triathlons to the para alpine skiing world championships.
 
         He’s leaving Tokyo as the champion of yet another sport: archery.
         
@@ -33,12 +39,24 @@
         Matt Stutzman, Andre Shelby and K.J. Polish all competed in the men’s compound division but went out in the elimination rounds before having a chance to compete for medals. Bennett joined Mather in the recurve competition and was also out in the elimination round, as was 21-year-old Emma Rose Ravish, who made her Paralympic debut in women’s recurve. Ravish and Bennett also competed in the first-ever mixed team recurve event at the Paralympic Games and finished ninth. 
         
         “I had a blast shooting with @ebarchery today for the first mixed team event at the Paralympics!” she wrote on Instagram. “It was the best I’ve shot in a match, and I’m pleased with the performance! Another post to come soon, as the #tokyoparalympics comes to a close.”</p>
-</body>
-<head>
-    <style>
-        body {
-        background-image: url(images/background.jpg);
-        }
-    </style>
-</head>
+        <script
+        src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
+        </script>
+        <h2> Formulario de Contacto</h2>
+        <form action="registro.php" method="POST" class="container">
+            <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" maxlength="45" id="asunto" required class="form-control" placeholder="Ingrese el asunto">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" maxlength="45" id="email" required class="form-control" placeholder="Ingrese su Email">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <input type="mensaje" name="mensaje" maxlength="255" required id="mensaje" class="form-control" placeholder="Ingrese el mensaje">
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
 </html>
