@@ -11,6 +11,6 @@ values ('{$asunto}', '{$email}', '{$mensaje}')";
 $result = $con->prepare($instruccion_sql);
 $result->execute();
 
-echo "Los datos del mensaje sobre {$asunto} enviados desde la direccion {$email} fueron procesados satisfactoriamente"
+echo "All the information regarding {$asunto} sent from the Email direction {$email} were  succesfully proccesed"
 
 ?>
